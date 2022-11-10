@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins ;
+}
+
+body{
+    background-image: url("Imagenes/Banner.png");
+    background-attachment: fixed;
+    margin: 0;
+    background-size: cover;
+}
+h1{
+    width: fit-content;
+    background-color: aliceblue;
+    margin: 40px auto;
+    border-radius: 60px;
+    box-shadow: 5px 5px black;
+    padding: 20px 30px;
+}
+
+#Inicio{
+    display: block;
+}
+
+#PantallaJuego{
+    display: none;
+}
+
+#Final{
+    display: none;
+}
+
