@@ -14,32 +14,32 @@
         <p>
             Cuestionario Science Kids
         </p>
-        <button class="btn">COMENZAR</button>
+        <button class="btn" onclick="comenzarJuego()">COMENZAR</button>
     </div>
 
     <div class="PantallaJuego" id="PantallaJuego">
-        <img src="Imagenes/Regiones.jpg" alt="" id="Regiones">
+        <img src="img/Regiones.jpg" alt="" id="imgReg">
         <div class="opciones">
-            <div class="opcion" id="op0">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
                 <div class="letra" id="l0"> A </div>
                 <div class="respuesta" id="r0"> OPCION A </div>
             </div>
-            <div class="opcion" id="op1">
-                <div class="letra" id="l1"> B </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class ="letra" id="l1"> B </div>
                 <div class="respuesta" id="r1"> OPCION B </div>
             </div>
-            <div class="opcion" id="op2">
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
                 <div class="letra" id="l2"> C </div>
-                <div class="respuesta" id="20"> OPCION C </div>
+                <div class="respuesta" id="r2"> OPCION C </div>
             </div>
         </div>
     </div>
     <div id="Final">
-        <h2>RESPUESTAS CORRECTAS: <span>2</span></h2>
-        <h2>RESPUESTAS INCORRECTAS: <span>3</span></h2>
-        <button class="btn"> VOLVER AL INICIO</button>
+        <h2>RESPUESTAS CORRECTAS: <span id="Correctas">2</span></h2>
+        <h2>RESPUESTAS INCORRECTAS: <span id="Incorrectas">3</span></h2>
+        <button class="btn" onclick="volverInicio()"> VOLVER AL INICIO</button>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
